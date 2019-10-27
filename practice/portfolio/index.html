@@ -7,10 +7,33 @@
 <html lang="en">
 	<head>
 		<title>Alex's Portfolio</title>
-		<link href="teststyles.css" rel="stylesheet" type="text/css" />
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
 		<style>
-			header {
-				background-color: darkgray;
+			<!--Table Styling-->
+			caption {
+				font-weight: bold;
+				font-size: 1.2em;
+				margin-bottom: 8px;
+			}
+			table, th, td {
+				border: 1px solid #0d1f2d;
+				border-collapse: collapse;
+				padding: 5px 10px;
+			}
+			table {
+				width: 90%;
+				margin: auto;
+			}
+			tr {
+				height: 30px;
+			}
+			
+			th {
+				background-color: #546a7b;
+				color: #f2eded;
+			}
+			tr:nth-child(odd) {
+				background-color: #e4c3ad;
 			}
 		</style>
 	</head>
@@ -21,20 +44,17 @@
 			</header>
 			
 			<nav class="border">
-				<hr style="border: thin dotted red;" />
-				
 				<p><a href="projects.html">Projects</a></p>
 				<p><a href="contact.html">Contact</a></p>
 				<p><a href="testimonials.html">Testimonials</a></p>
-
-				<hr style="width:50%; border:2px solid blueviolet;"/>
+				<div class="clear-float"></div>
 			</nav>
 			
 			<section>
 			
 				<article class="border" id="about-me">
 					<h2><em>About Me</em></h2>
-					<img src="images/tie.jpg" alt="Generic Portrait" style="width: 400px;" />
+					<img src="images/tie.jpg" alt="Generic Portrait" style="width:400px;" />
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae 
 					volutpat nulla, <strong>vel tempor augue</strong>. In eget nibh ultrices, dictum enim sed, 
 					fringilla metus. Duis nec tincidunt mauris. Donec quis neque non tortor 
@@ -43,39 +63,48 @@
 					In vitae ligula hendrerit, <strong>hendrerit mi ut</strong>, luctus nisi. Curabitur eu tincidunt
 					nulla. Quisque rhoncus libero in arcu hendrerit elementum. Morbi nunc tellus, 
 					vehicula at nisi in, iaculis placerat arcu.</p>
+					<div class="clear-float"></div>
 				</article>
 				
 				<article id="past-experience">
 					<h2><em>Past Experiences</em></h2>
 					<img src="images/pcb.jpg" alt="Printed Circuit Board" style="width: 400px;" />
+					<div class="right-content">
 					<table>
 						<caption>Employment History</caption>
-						<tr>
-							<th>Years of Employment</th>
-							<th>Title</th>
-							<th>Company</th>
-						</tr>
-						<tr>
-							<td>2015-2019</td>
-							<td>Student</td>
-							<td>NCSU</td>
-						</tr>
-						<tr>
-							<td>2012-2015</td>
-							<td>Something</td>
-							<td>Somewhere</td>
-						</tr>
-						<tr>
-							<td>2007-2012</td>
-							<td>Butcher</td>
-							<td>MeatPlace</td>
-						</tr>
+						<thead>
+							<tr>
+								<th>Years of Employment</th>
+								<th>Title</th>
+								<th>Company</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2015-2019</td>
+								<td>Student</td>
+								<td>NCSU</td>
+							</tr>
+							<tr>
+								<td>2012-2015</td>
+								<td>Something</td>
+								<td>Somewhere</td>
+							</tr>
+							<tr>
+								<td>2007-2012</td>
+								<td>Butcher</td>
+								<td>MeatPlace</td>
+							</tr>
+						</tbody>
 					</table>
+					</div>
+					<div class="clear-float"></div>
 				</article>
 				
 				<article id="hobbies">
 					<h2><em>Hobbies</em></h2>
 					<img src="images/scope.jpg" alt="Person using oscilloscope" style="width: 400px;" />
+					<div class="right-content">
 					<ul>
 						<li>Video Games</li>
 						<ol>
@@ -104,11 +133,12 @@
 							<li>More Walking</li>
 						</ul>
 					</ul>
+					</div>
+					<div class="clear-float"></div>
 				</article>
 			
 			</section>
-			<footer style="background-color: fuchsia">
-				<hr />
+			<footer>
 				<p>&copy; 2020 Alex White. All rights reserved.</p>
 			</footer>
 		</main>
