@@ -7,6 +7,12 @@
 <html lang="en">
 	<head>
 		<title>Alex's Portfolio</title>
+		<link href="teststyles.css" rel="stylesheet" type="text/css" />
+		<style>
+			header {
+				background-color: darkgray;
+			}
+		</style>
 	</head>
 	<body>
 		<main>
@@ -14,19 +20,19 @@
 				<h1>Portfolio for Alex</h1>
 			</header>
 			
-			<nav>
-				<hr />
+			<nav class="border">
+				<hr style="border: thin dotted red;" />
 				
 				<p><a href="projects.html">Projects</a></p>
 				<p><a href="contact.html">Contact</a></p>
 				<p><a href="testimonials.html">Testimonials</a></p>
 
-				<hr />
+				<hr style="width:50%; border:2px solid blueviolet;"/>
 			</nav>
 			
 			<section>
 			
-				<article id="about-me">
+				<article class="border" id="about-me">
 					<h2><em>About Me</em></h2>
 					<img src="images/tie.jpg" alt="Generic Portrait" style="width: 400px;" />
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae 
@@ -101,7 +107,7 @@
 				</article>
 			
 			</section>
-			<footer>
+			<footer style="background-color: fuchsia">
 				<hr />
 				<p>&copy; 2020 Alex White. All rights reserved.</p>
 			</footer>
