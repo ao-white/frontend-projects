@@ -1,0 +1,67 @@
+/*
+	Alex White
+	10-28-19
+	Revision -
+*/
+
+@font-face { font-family: 'Amatic SC'; src: url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap'); }
+
+body {
+	background-color:#85AF5C;
+}
+
+header, footer, nav {
+	background-color: #F9991C;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 20px 10px 10px 10px;
+}
+
+header, footer {
+	height: 100px;
+}
+
+footer {
+	margin-top: 10px;
+}
+
+header {
+	font-family: 'Amatic SC', cursive, arial;
+	font-size: 200%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav {
+	height: 15px;
+	border-top: 5px solid #355920;
+	border-bottom: 5px solid #355920;
+	margin: 0px 0px 10px 0px;
+	display: flex;
+	align-items: center;
+}
+
+nav a {
+	background-color: #355920;
+	color: #ffffff;
+	padding: 2px;
+	border: thin solid #000000;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	margin: 20px;
+	width: 100px;
+}
+
+nav a:visited {
+	color: #7CD91F;
+}
+
+nav a:hover {
+	font-weight: bold;
+}
+
+nav a:active {
+	color: #000000;
+}
