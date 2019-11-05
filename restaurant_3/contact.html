@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--
+	Alex White
+	10-24-19
+	Revision
+-->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+		<title>Grub Stranding | Contact Us</title>
+		
+		<style>
+			label {
+				font-size: 120%;
+				font-weight: bold;
+				color: #FFFFFF;
+			}
+			input[type=text] {
+				border: 2px solid #000;
+				width: 300px;
+				padding: 8px 8px;
+				margin: 10px 0;
+				box-sizing: border-box;
+			}
+			fieldset {
+				background-color: #fef9ff;
+				width: 300px;
+				padding: 12px 20px;
+				margin: 10px 0;
+				box-sizing: border-box;
+			}
+			select, textarea {
+				margin: 10px 0;
+				font-size: 1em;
+			}
+			textarea {
+				width: 300px;
+				height: 100px;
+				padding: 12px 20px;
+				margin: 10px 0;
+				box-sizing: border-box;
+				border: 2px solid #0d1f2d;
+				border-radius: 3px;
+				background-color: #fff;
+				resize: none;
+			}
+			.contactform {
+				display: block;
+				text-align: center;
+			}
+			form {
+				display: inline-block;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: left;
+			}
+		</style>
+		
+		<script type="text/JavaScript" src="scripts/restaurantScripts.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+		crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+	</head>
+	
+	<body>
+		<noscript>
+		  <div style="text-align: center">
+			<span style="background:yellow; color:red;">Site is best viewed with JavaScript enabled!</span>
+		  </div>
+		</noscript>
+	
+		<header class="jumbotron">
+			<h1 style="font-family: 'Amatic SC', arial; font-size:5em;">Grub Stranding</h1><br />
+			<h3 class="font-italic">Check out our new location!</h3>
+		</header>
+		
+		<nav>
+			<a class="btn badge-pill" href="index.html"><span class="oi oi-home"></span>Home</a>
+			<a class="btn badge-pill" href="menu.html">Menu</a>
+			<a class="btn badge-pill" href="contact.html">Contact Us</a>
+		</nav>
+	
+		<section>
+			<div class="container text-center" >
+				<form name="contactForm" onsubmit="return validateInfo();">
+					<div class="form-group col-12">
+						<label for="name" style="padding-right: 3px">Name:</label>
+						<input type="text" id="name"><br />
+					</div>
+					<div class="form-group col-12">
+						<label for="email" style="padding-right: 7px">Email:</label>
+						<input type="text" id="email"><br />
+					</div>
+					<div class="form-group col-12">
+						<label for="phone">Phone:</label>
+						<input type="text" id="phone"><br />
+					</div>
+					<div class="form-group col-12">
+						<label for="reason">Reason for Inquiry:</label>
+						<select id="reason" name="reason">
+							<option value="default" selected>Catering</option>
+							<option value="party">Private Party</option>
+							<option value="feedback">Feedback</option>
+							<option value="other">Other</option>
+						</select></br />
+					</div>
+					<div class="form-group col-12">
+						<label for="info">Additional Information:</label><br />
+						<textarea id="info">
+						</textarea><br />
+					</div>
+					<div class="form-group col-12">
+						<label for="no">Have you been to the restaurant?</label>
+						<input type="radio" id="no" name="visit" value="no" checked>
+						<label for="no">No</label>
+						<input type="radio" id="yes" name="visit" value="yes">
+						<label for="yes">Yes</label><br />
+					</div>
+					<div class="form-group col-12">
+						<label for="monday">Best days to contact you:</label>
+						<input type="checkbox" id="monday" name="days" value="monday">
+						<label for="monday">M</label>
+						<input type="checkbox" id="tuesday" name="days" value="tuesday">
+						<label for="tuesday">T</label>
+						<input type="checkbox" id="wednesday" name="days" value="wednesday">
+						<label for="wednesday">W</label>
+						<input type="checkbox" id="thursday" name="days" value="thursday">
+						<label for="thursday">Th</label>
+						<input type="checkbox" id="friday" name="days" value="friday">
+						<label for="friday">F</label><br />
+					</div>
+					<div class="form-group text-center col-12">
+						<button type="submit" id="submit" class="btn btn-default">Send Request</button>
+					</div>
+				</form>
+			</div>	
+		</section>
+	
+		<footer>	
+			<p>123 Yellowbrick Rd, Raleigh, NC, 55555</p>
+			<p>123-456-7890</p>
+		</footer>
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+		crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+		crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+		crossorigin="anonymous"></script>
+	</body>
+
+
+</html>
