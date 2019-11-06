@@ -16,7 +16,7 @@ function luckySevens(){
 	var rollCount = 0;
 	
 	if (initBet == "" || isNaN(initBet)) {
-        alert("Please enter only a number.");
+        alert("Please enter a valid number.");
         document.forms["betForm"]["initBet"].focus();
         return false;
     }
